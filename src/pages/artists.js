@@ -66,7 +66,7 @@ const ArtistPage = () => {
     return (
         <Layout>
             <SEO title="artist"/>
-            <Wrapper artistColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
+            <Wrapper artistsColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
                 <div className="banner">
                     <Image fluid={artistsPageHeaderPicture.imageFile.childImageSharp.fluid}  alt={artistsPageHeaderPicture.altText}/>
                     <BottomEdgeDown color={COLORS.SECONDARY}/>
@@ -84,7 +84,7 @@ const ArtistPage = () => {
                                 <Image fluid={artist.profile.imageFile.childImageSharp.fluid} alt={artist.profile.altText}/>
                                 <div className="artist-info">
                                     <p>
-                                        {artist.artistName} {artist.lastName}
+                                        {artist.firstName} {artist.lastName}
                                     </p>
                                     {artist.artistName && <p>{artist.artistName}</p>}
                                 </div>
